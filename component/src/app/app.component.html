@@ -1,2 +1,30 @@
 <p>This Is App Component</p>
 <app-parent></app-parent>
+
+
+<h1>{{name}}</h1>
+<h2>{{getName()}}</h2>
+<h3>{{arr[0]}}</h3>
+<!-- Name:{{company && company.name}}<br/>
+City:{{company && company.city}}<br/>
+Country:{{company && company.country}} -->
+Name: {{Company ? Company.name: "Data Not Found"}}
+<p>{{1+2}}</p>
+<p>{{n1+n2}}</p>
+<form>
+    <input type="text" [value]=name1/>
+</form><br/><br/>
+<h2 [class]="redClass">Hello New CSS</h2><br/><br/>
+
+
+<h3>Event Binding</h3>
+<button (click)="changeName()">click me</button>
+<p>{{name}}</p><br/><br/>
+
+<h3>Two Way Data Binding</h3>
+<input [(ngModel)]='name1'/>
+<h1>{{name1}}</h1>
+
+<!-- Style Binding -->
+<h1 [style.color] = "'lightGreen'"
+[style.font-size.px]="50">Style Binding In An Angular</h1>

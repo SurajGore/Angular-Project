@@ -1,2 +1,22 @@
 <app-sampletest></app-sampletest>
 <app-sampletest1></app-sampletest1>
+
+<h1>{{getName()}}</h1>
+<!-- Name:{{Student && Student.stdname}}<br/>
+Age:{{Student && Student.stdage}}<br/>
+Roll No:{{Student && Student.stdrollno}}<br/>
+Address:{{Student && Student.stdaddress}}<br/> -->
+Name: {{Student ? Student.stdname: "Data Not Found"}}
+
+
+<!-- Style Binding -->
+<h1 [style.color] = "'Blue'"
+[style.font-size.px]="25">Hello World</h1>
+
+<h3>Event Binding</h3>
+<button (click)="changeName()">click me</button>
+<p>{{Name}}</p><br/>
+
+<form>
+    <input type="text" [value]=Name/>
+</form><br/><br/>
