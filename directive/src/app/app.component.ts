@@ -33,7 +33,4 @@ gender1:string='male';
 ongenderchange(val:string){
   this.gender1=val;
 }
-// ongenderchange(val:boolean){
-//   this.isgendervalid=val
-// }
 }
