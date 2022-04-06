@@ -1,0 +1,7 @@
+<h1>Parent Component</h1>
+<!-- <h2 class="text-danger">Hello</h2> -->
+<label>Parent Component: </label>
+<input type="text" #Pcomponent (keyup)="0"/>
+
+<br/><br/>
+<app-child [Pdata]="Pcomponent.value"></app-child>
