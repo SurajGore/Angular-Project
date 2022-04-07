@@ -5,3 +5,9 @@
 
 <br/><br/>
 <app-child [Pdata]="Pcomponent.value"></app-child>
+
+<hr>
+Data from Child Component:{{Cdata}}
+<hr/> 
+<app-child (childevent)="receiData($event)"></app-child>
+<!-- <app-child (childevent)="Cdata=$event"></app-child> -->

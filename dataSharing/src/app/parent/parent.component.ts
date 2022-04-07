@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./parent.component.css']
 })
 export class ParentComponent implements OnInit {
-
+  Cdata:any;
   constructor() { }
 
   ngOnInit(): void {
   }
+  receiData(val:any){
+    this.Cdata=val;
+  }
+  msg = "Hello World !!";
 
 }

@@ -11,6 +11,12 @@ export class ChildComponent implements OnInit {
   @Output() childevent= new EventEmitter();
   constructor() { }
 
+    onChange(val:any){
+      // console.log(val);
+      this.childevent.emit(val);
+    }
+
+    @Input() message: string="";
   ngOnInit(): void {
   }
 
