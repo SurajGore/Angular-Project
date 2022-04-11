@@ -1,0 +1,9 @@
+<h3>Parent Component</h3>
+<input type="text" #pcomponent (keyup)="0"/>
+<!-- <app-child [pdata]="pcomponent.value"></app-child> -->
+
+<app-child></app-child>
+
+<h3>NgDestroy Method</h3>
+<button type="button" (click)="showHide()">Show/Hide</button>
+<app-child *ngIf="isShow"></app-child>
