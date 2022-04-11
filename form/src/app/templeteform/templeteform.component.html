@@ -1,6 +1,6 @@
 <h2>Registraion Form</h2>
 <div>
-    <form #regdata='ngForm' (ngSubmit)="Registration (regdata)">
+    <form #regdata='ngForm' (ngSubmit)="Registration(regdata)">
         <div>
             <input type="text" name="firstname" placeholder="Enter Your First Name" required minlength="2" ngModel #fname='ngModel'>
             <span *ngIf="fname.touched && !fname.invalid">First Name Is Required</span>

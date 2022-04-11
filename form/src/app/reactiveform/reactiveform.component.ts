@@ -21,10 +21,10 @@ export class ReactiveformComponent implements OnInit {
     })
   }
 
-  register (Formdata:FormBuilder){
+  register (Formdata:FormGroup){
     console.log(Formdata);
-    //console.log(Formdata.Value);
-    //console.log(Formdata.Valid);
+    // console.log(Formdata.Value);
+    // console.log(Formdata.Valid);
     //console.log(this.regForm.value);
     //console.log(this.regForm.valid);
     //console.log(this.regForm);

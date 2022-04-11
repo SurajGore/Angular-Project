@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormBuilder, NgForm } from '@angular/forms';
 @Component({
   selector: 'app-templeteform',
   templateUrl: './templeteform.component.html',
@@ -15,7 +15,7 @@ Registration(regdata:NgForm){
   // alert("Hello");
   console.log(regdata.valid);
   console.log(regdata.value);
-}
+ }
 
 // clickme(){
 //   alert ("cancel call")
